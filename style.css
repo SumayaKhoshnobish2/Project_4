@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family : Arial, sans-serif;
+}
+.container {
+    height : 100vh;
+    width : 100%;
+    background: linear-gradient(to right, #006 70%, #ffec59 30%);
+    position: relative;
+    overflow: hidden;
+
+}
+#YU {
+    height : 65px;
+}
+.main_image{
+    height : 400px;
+    border-radius: 50px;
+}
+nav {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;  
+}
+nav ul li{
+    margin:0 5px;
+}
+nav ul a{
+    text-decoration: none;
+    padding: 0.3rem 1.3rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: #2ebde0;
+    position: relative;
+    z-index: 1;
+}
+nav ul a::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0px;
+    border-radius: 20px;
+    background-color: #eae311;
+    z-index: -1;
+    transition: 0.5s;
+}
+nav ul a:hover:after{
+    width: 100%;
+}
+.main_content{
+    color: white;
+    width : 60%;
+    padding-top: 100px;
+    margin-left: 3rem;
+    display : flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.main_student, .main_text {
+    flex-basis: 50%;
+}
+.main_student img {
+    width : 100%;
+}
+.main_content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    
+}
+.main_content p {
+    margin-top: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.main_content button {
+    margin-top : 2.5rem;
+    outline : none;
+    border: none;
+    font-size: 18px;
+    padding : 0.5rem 2.5rem 0.5rem 1rem;
+    border-radius: 0 50% 50% 0;
+    background-color: #ffec59;
+    color : white;
+    cursor: pointer;
+
+}
+.right {
+    position : absolute;
+    right : 6%;
+    bottom : 10%;
+    display : block;
+    max-width: 400px;
+}
+.box{
+    display : flex;
+    align-items: center;
+}
+body > .sign_up {
+    justify-content: center;
+}
+
+form {
+    margin:50px auto 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    position : absolute;
+    right : 0%;
+    bottom : 20%;
+}
+input{
+    display : block;
+    width : 350px;
+    height: 40px;
+    margin: 20px;
+    align-content: center;
+    font-size: 15px;
+}
+button {
+    width : 350px;
+    height: 40px;
+}
+.container {
+    height: 100vh;
+    width : 100%;
+}
+
+.sign_up {
+    width: 100%;
+}
